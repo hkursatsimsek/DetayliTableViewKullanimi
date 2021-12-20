@@ -28,32 +28,35 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2m-Ae-UcI">
-                                                    <rect key="frame" x="36" y="19" width="342" height="142"/>
+                                                    <rect key="frame" x="20" y="11" width="374" height="158"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Atg-yK-c7Y">
-                                                            <rect key="frame" x="160" y="17.5" width="100.5" height="107.5"/>
+                                                            <rect key="frame" x="160" y="25.5" width="100.5" height="107.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone 13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8b-TC-6E4">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="iPhone 13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8b-TC-6E4">
                                                                     <rect key="frame" x="0.0" y="0.0" width="100.5" height="24"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21.999 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzJ-6V-Zgd">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="21.999 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzJ-6V-Zgd">
                                                                     <rect key="frame" x="0.0" y="40" width="100.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFv-Vc-CyV">
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFv-Vc-CyV">
                                                                     <rect key="frame" x="0.0" y="76.5" width="100.5" height="31"/>
                                                                     <state key="normal" title="Button"/>
                                                                     <buttonConfiguration key="configuration" style="filled" title="Sepete Ekle"/>
+                                                                    <connections>
+                                                                        <action selector="sepeteEkleButton:" destination="gj0-dY-OQU" eventType="touchUpInside" id="0c5-pP-g15"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telefon" translatesAutoresizingMaskIntoConstraints="NO" id="Iw8-kX-1nL">
-                                                            <rect key="frame" x="16" y="7" width="128" height="128"/>
+                                                            <rect key="frame" x="16" y="15" width="128" height="128"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="128" id="ZSC-HK-gp4"/>
                                                                 <constraint firstAttribute="width" constant="128" id="bRl-WN-iWo"/>
@@ -71,11 +74,12 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="E2m-Ae-UcI" firstAttribute="leading" secondItem="w5s-pU-Vi6" secondAttribute="leadingMargin" constant="16" id="LfN-Cz-4QQ"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="E2m-Ae-UcI" secondAttribute="trailing" constant="16" id="Mxg-UM-t57"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="E2m-Ae-UcI" secondAttribute="bottom" constant="8" id="hEU-Z0-1p4"/>
-                                                <constraint firstItem="E2m-Ae-UcI" firstAttribute="top" secondItem="w5s-pU-Vi6" secondAttribute="topMargin" constant="8" id="pi2-hL-tRO"/>
+                                                <constraint firstItem="E2m-Ae-UcI" firstAttribute="leading" secondItem="w5s-pU-Vi6" secondAttribute="leadingMargin" id="LfN-Cz-4QQ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="E2m-Ae-UcI" secondAttribute="trailing" id="Mxg-UM-t57"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="E2m-Ae-UcI" secondAttribute="bottom" id="hEU-Z0-1p4"/>
+                                                <constraint firstItem="E2m-Ae-UcI" firstAttribute="top" secondItem="w5s-pU-Vi6" secondAttribute="topMargin" id="pi2-hL-tRO"/>
                                             </constraints>
+                                            <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="hucreArkaPlan" destination="E2m-Ae-UcI" id="7oD-Ig-91k"/>
@@ -97,10 +101,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ürünler" id="p7S-tf-Dgb"/>
+                    <connections>
+                        <outlet property="urunlerTableView" destination="Ijn-ek-bja" id="zCF-ly-mvH"/>
+                        <segue destination="LXv-DP-E2U" kind="show" identifier="toDetay" id="k5a-aj-dbI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="816" y="80"/>
+            <point key="canvasLocation" x="815.94202898550736" y="79.6875"/>
         </scene>
         <!--DetayVC-->
         <scene sceneID="XQg-vT-XBY">
@@ -109,9 +117,44 @@
                     <view key="view" contentMode="scaleToFill" id="eFt-XD-sxl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20000 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyS-Si-K0q">
+                                <rect key="frame" x="148.5" y="430" width="117" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telefon" translatesAutoresizingMaskIntoConstraints="NO" id="ZQg-B4-SzT">
+                                <rect key="frame" x="79" y="172" width="256" height="256"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cr-Ao-jlB">
+                                <rect key="frame" x="32" y="787" width="350" height="43"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SEPETE EKLE">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sepeteEkleButton:" destination="LXv-DP-E2U" eventType="touchUpInside" id="AgN-3x-fwe"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ulw-70-M0U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZQg-B4-SzT" firstAttribute="centerX" secondItem="eFt-XD-sxl" secondAttribute="centerX" id="UFv-EW-op1"/>
+                            <constraint firstItem="QyS-Si-K0q" firstAttribute="centerY" secondItem="eFt-XD-sxl" secondAttribute="centerY" id="XPQ-XI-gl1"/>
+                            <constraint firstItem="ulw-70-M0U" firstAttribute="bottom" secondItem="3cr-Ao-jlB" secondAttribute="bottom" constant="32" id="Xts-WS-gS2"/>
+                            <constraint firstItem="ulw-70-M0U" firstAttribute="trailing" secondItem="3cr-Ao-jlB" secondAttribute="trailing" constant="32" id="YnW-Eg-hKe"/>
+                            <constraint firstItem="3cr-Ao-jlB" firstAttribute="leading" secondItem="ulw-70-M0U" secondAttribute="leading" constant="32" id="bnp-AD-yTd"/>
+                            <constraint firstItem="QyS-Si-K0q" firstAttribute="centerX" secondItem="eFt-XD-sxl" secondAttribute="centerX" id="ijm-bY-FaN"/>
+                            <constraint firstItem="ZQg-B4-SzT" firstAttribute="top" secondItem="ulw-70-M0U" secondAttribute="top" constant="32" id="mr1-VD-UeF"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="c3N-K0-757"/>
+                    <connections>
+                        <outlet property="urunFiyat" destination="QyS-Si-K0q" id="EHc-m4-6xD"/>
+                        <outlet property="urunResim" destination="ZQg-B4-SzT" id="o0a-E9-Cs5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6F-f9-d1T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,7 +166,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jIF-8I-Yb4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="5qK-kf-cTQ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
